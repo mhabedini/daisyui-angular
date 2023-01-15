@@ -1,4 +1,6 @@
 import {Component, Input} from '@angular/core';
+import {ButtonType} from "./button-type";
+import {ButtonSize} from "./button-size";
 
 @Component({
   selector: 'lib-daisyui-button',
@@ -17,4 +19,8 @@ export class DaisyuiButtonComponent {
   @Input() text?: string
   @Input() type?: ButtonType
   @Input() size?: ButtonSize
+
+  handleClick() {
+    this.onClick && this.onClick()
+  }
 }

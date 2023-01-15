@@ -1,4 +1,4 @@
-enum ButtonType {
+export const enum ButtonType {
   INFO= 'btn-info',
   WARNING = 'btn-warning',
   ERROR = 'btn-error',

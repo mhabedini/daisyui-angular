@@ -1,10 +1,10 @@
 <button class="btn"
-        [class]="type + size"
-        [attr.disabled]="disabled"
+        [class]="type ? type : '' + size ? size : ''"
+        [attr.aria-disabled]="disabled"
         [class.btn-outline]="outlined"
         [class.btn-active]="active"
         [class.btn-wide]="wide"
         [class.loading]="loading"
         [class.no-animation]="noAnimation"
-        (click)="onClick()"
+        (click)="handleClick()"
 >{{text}} {{icon}}</button>

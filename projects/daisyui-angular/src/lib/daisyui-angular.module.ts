@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {DaisyuiAngularComponent} from './daisyui-angular.component';
-import {DaisyuiButtonComponent} from './daisyui-button/daisyui-button.component';
+import {DaisyuiButtonComponent} from './components/daisyui-button/daisyui-button.component';
 
 
 const components = [
