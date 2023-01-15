@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
-import { DaisyuiAngularComponent } from './daisyui-angular.component';
+import {NgModule} from '@angular/core';
+import {DaisyuiAngularComponent} from './daisyui-angular.component';
+import {DaisyuiButtonComponent} from './daisyui-button/daisyui-button.component';
 
 
+const components = [
+  DaisyuiAngularComponent,
+  DaisyuiButtonComponent
+]
 
 @NgModule({
-  declarations: [
-    DaisyuiAngularComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    DaisyuiAngularComponent
-  ]
+  declarations: components,
+  imports: [],
+  exports: components
 })
-export class DaisyuiAngularModule { }
+export class DaisyuiAngularModule {
+}
